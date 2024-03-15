@@ -101,3 +101,5 @@ else if (g >= 216)
 {
     Console.WriteLine("Jesteś gigantem");
 }
+
+// Task 7
