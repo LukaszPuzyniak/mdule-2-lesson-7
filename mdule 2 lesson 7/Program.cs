@@ -4,6 +4,7 @@
 using System;
 using System.Collections.Concurrent;
 using System.ComponentModel.Design;
+using System.Threading.Channels;
 using System.Xml.Linq;
 
 int a = 5;
@@ -180,4 +181,68 @@ else
 }
 
 // Task 11
-aa
+
+Console.WriteLine("Podaj ocene ucznia:");
+
+int grade = Int32.Parse(Console.ReadLine());
+
+switch (grade)
+{
+    case 1:
+        Console.WriteLine("Niedostateczny");
+        break;
+    case 2:
+        Console.WriteLine("Dopuszczający");
+        break;
+    case 3:
+        Console.WriteLine("Dostateczny");
+        break;
+    case 4:
+        Console.WriteLine("Dobry");
+        break;
+    case 5:
+        Console.WriteLine("Bardzo dobry");
+        break;
+    case 6:
+        Console.WriteLine("Celujący");
+        break;
+    default:
+        Console.WriteLine("Niepoprawne dane.");
+        break;
+
+}
+
+
+//task 12
+
+Console.WriteLine("Podaj numer dnia tygodnia:");
+
+int day = Int32.Parse(Console.ReadLine());
+
+switch (day)
+{
+    case 1:
+        Console.WriteLine("Poniedziałek");
+        break;
+    case 2:
+        Console.WriteLine("Wtorek");
+        break;
+    case 3:
+        Console.WriteLine("Środa");
+        break;
+    case 4:
+        Console.WriteLine("Czwartek");
+        break;
+    case 5:
+        Console.WriteLine("Piątek");
+        break;
+    case 6:
+        Console.WriteLine("Sobota");
+        break;
+    case 7:
+        Console.WriteLine("Niedziela");
+        break;
+    default:
+        Console.WriteLine("Niepoprawne dane.");
+        break;
+}
