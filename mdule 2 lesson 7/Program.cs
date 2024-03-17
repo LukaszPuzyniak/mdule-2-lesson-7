@@ -170,7 +170,7 @@ int triangleA = Int32.Parse(Console.ReadLine());
 int triangleB = Int32.Parse(Console.ReadLine());
 int triangleC= Int32.Parse(Console.ReadLine());
 
-if ((triangleA >triangleB+triangleC && triangleB> triangleA + triangleC && triangleC > triangleA+triangleB) && (triangleA > 0 && triangleB > 0 && triangleC >0))
+if ((triangleA < triangleB+triangleC && triangleB < triangleA + triangleC && triangleC < triangleA+triangleB) && (triangleA > 0 && triangleB > 0 && triangleC >0))
 {
     Console.WriteLine("Można zbudować trójkąt");
 }
