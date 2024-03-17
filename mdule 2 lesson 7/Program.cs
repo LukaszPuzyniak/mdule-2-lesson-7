@@ -246,3 +246,41 @@ switch (day)
         Console.WriteLine("Niepoprawne dane.");
         break;
 }
+
+
+// task 13
+
+Console.WriteLine("Podaj pierwszą liczbę: ");
+double data1 = Double.Parse(Console.ReadLine());
+Console.WriteLine("Podaj druga liczbę: ");
+double data2 = Double.Parse(Console.ReadLine());
+
+Console.WriteLine("Podaj numer operacji do wykonania:\r\n1. Dodawanie\r\n2. Odejmowanie\r\n3. Mnożenie\r\n4. Dzielenie\r");
+
+double score = Double.Parse(Console.ReadLine());
+
+switch (score)
+{
+    case 1:
+        Console.WriteLine($"Twoj wynik to:{data1 + data2}");
+        break;
+
+    case 2:
+        Console.WriteLine($"Twoj wynik to:{data1 - data2}");
+        break;
+
+    case 3:
+        Console.WriteLine($"Twoj wynik to:{data1 * data2}");
+        break;
+
+    case 4:
+        if (data1 == 0 || data2 == 0)
+            Console.WriteLine("Nie dzielimy przez ZERO");
+        else
+            Console.WriteLine($"Twoj wynik to:{data1 / data2}");
+        break;
+    default:
+        Console.WriteLine("Wprowadzone złe dane");
+        break;
+
+}
