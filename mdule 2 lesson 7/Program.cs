@@ -164,3 +164,19 @@ else if (temp >= 40)
 
 // Task 10
 
+Console.WriteLine("Podaj trzy długości zeby zbudować trójką, sprawdzimy czy da sie zbudowac z tego trójkąt:");
+
+int triangleA = Int32.Parse(Console.ReadLine());
+int triangleB = Int32.Parse(Console.ReadLine());
+int triangleC= Int32.Parse(Console.ReadLine());
+
+if ((triangleA >triangleB+triangleC && triangleB> triangleA + triangleC && triangleC > triangleA+triangleB) && (triangleA > 0 && triangleB > 0 && triangleC >0))
+{
+    Console.WriteLine("Można zbudować trójkąt");
+}
+else
+{
+    Console.WriteLine("Nie można zbudować trójką");
+}
+
+// Task 11
