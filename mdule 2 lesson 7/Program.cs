@@ -47,24 +47,35 @@ else
 // task 4
 
 int e = 2016;
-if (e % 4 == 0)
+
+Console.WriteLine("Enter year: ");
+string year = (Console.ReadLine());
+
+if(int.TryParse(year, out e))
 {
-    Console.WriteLine(e + " jest rokiem przestępnym");
+    if (e % 4 == 0 && e % 100 !=0 || e % 400 == 0)
+    {
+        Console.WriteLine(e + " jest rokiem przestępnym");
+    }
+    else
+    {
+        Console.WriteLine(e + " nie jest rokiem przestępnym");
+    }
 }
 else
 {
-    Console.WriteLine(e + " nie jest rokiem przestępnym");
+    Console.WriteLine("Invalid input. Enter correct data."); 
 }
 
 // task 5
 Console.WriteLine("Podaj swój wiek:");
 byte f = byte.Parse(Console.ReadLine());
 
-if (f >= 21 && f <= 29)
+if (f >= 21 && f < 30)
 {
     Console.WriteLine("Możesz zostać posłem i premierem");
 }
-else if (f >= 30 && f <= 34)
+else if (f >= 30 && f < 35)
 {
     Console.WriteLine("Możesz zostać posłem i premierem");
     Console.WriteLine("Możesz zostać senatorem");
@@ -83,19 +94,19 @@ else if (f < 21)
 // task 6
 Console.WriteLine("Podaj swój wzrost w\"cm\":");
 short g = short.Parse(Console.ReadLine());
-if ( g <= 140)
+if ( g < 141)
 {
     Console.WriteLine("Jesteś krasnoludem");
 }
-else if ( g >= 141 &&  g <= 160)
+else if ( g >= 141 &&  g < 161)
 {
     Console.WriteLine("Jesteś niski");
 }
-else if (g >= 161 && g <= 179)
+else if (g >= 161 && g < 180)
 {
     Console.WriteLine("Jesteś średniego wzrostu");
 }
-else if (g >= 180 && g <= 215)
+else if (g >= 180 && g < 216)
 {
     Console.WriteLine("Jesteś wysoki");
 }
